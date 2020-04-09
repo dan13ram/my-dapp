@@ -23,8 +23,9 @@ contract('DataStore', (accounts) => {
 
     it('sets data', async () => {
         const input = "input";
-        await this.dataStore.set(input);
-        const data = await this.dataStore.data();
+        const result = await this.dataStore.set(input);
+        const event = result.logs[0].args;
+        const data = event.data;
         assert.notEqual(data, '');
         assert.notEqual(data, null);
         assert.notEqual(data, undefined);
