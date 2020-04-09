@@ -20,12 +20,12 @@
     "url": "https://github.com/dan13ram/my-dapp/issues"
   },
   "homepage": "https://github.com/dan13ram/my-dapp#readme",
-  "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^3.0.0",
     "lite-server": "^2.5.4",
-    "truffle": "^5.1.20"
+    "truffle": "^5.1.20",
+    "truffle-contract": "3.0.6"
   }
 }
